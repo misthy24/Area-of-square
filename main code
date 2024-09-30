@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+	int side, area;
+	printf("Enter the Length:\t");
+	scanf("%d", &side);
+	area = side * side;
+	printf("Area of Square: %d\n", area);
+}
