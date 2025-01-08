@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+float calculateCircleArea(float radius) {
+    return 3.14 * radius * radius;
+}
+
+int main() {
+    float radius = 5.0;
+    printf("Area of circle: %.2f\n", calculateCircleArea(radius));
+    return 0;
+}
+
