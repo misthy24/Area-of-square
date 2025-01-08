@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int main() {
+    // Variables and Data Types
+    int num1, num2, result;
+    float average;
+    char choice;
+
+    // User Input
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    // Arithmetic Operators
+    result = num1 + num2;
+    printf("Sum: %d\n", result);
+
+    // Comparison Operators
+    if (num1 > num2) {
+        printf("%d is greater than %d\n", num1, num2);
+    } else if (num1 < num2) {
+        printf("%d is less than %d\n", num1, num2);
+    } else {
+        printf("%d is equal to %d\n", num1, num2);
+    }
+
+    // Logical Operators
+    if (num1 > 10 && num2 > 10) {
+        printf("Both numbers are greater than 10\n");
+    }
+
+    // Switch Statement
+    printf("Enter your choice (A/B/C): ");
+    scanf(" %c", &choice);
+    switch (choice) {
+        case 'A':
+            printf("You chose option A\n");
+            break;
+        case 'B':
+            printf("You chose option B\n");
+            break;
+        case 'C':
+            printf("You chose option C\n");
+            break;
+        default:
+            printf("Invalid choice\n");
+    }
+
+    // Loops
+    int i;
+    for (i = 1; i <= 5; i++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+
+    // Arrays
+    int scores[5] = {90, 80, 70, 60, 50};
+    printf("Scores: ");
+    for (i = 0; i < 5; i++) {
+        printf("%d ", scores[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
